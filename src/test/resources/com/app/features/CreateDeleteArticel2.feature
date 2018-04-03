@@ -1,0 +1,20 @@
+@Regression @article
+Feature: create article with geading and body
+
+  Scenario: 
+    Given I logged into tiki-wiki
+    When I create article <title> write <body> in bold text format
+    Then articles  content bust be bold text format
+    And I delete <title> article
+
+  Scenario Outline: write content
+    Given I logged into tiki-wiki
+    When I create  article with <body> and <Heading> <title>
+    Then I verify  article  <title> has <body> and <Heading> content
+    And I delete <title> article
+
+    Examples: 
+      | title    | Heading       | body       |
+      | custome1 | test heading1 | my text    |
+      | custome2 | test heading1 | other text |
+     
