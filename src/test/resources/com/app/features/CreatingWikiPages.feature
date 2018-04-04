@@ -3,6 +3,7 @@ Feature: Creating Wiki Pages
   @aika
   Scenario: Wiki Page
     Given I logged into tiki-wiki
+    And I go to 
     And I should see Menu options:
       | Home           |
       | Search         |
