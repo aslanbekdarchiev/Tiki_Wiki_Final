@@ -17,6 +17,6 @@ public class HomePage {
 	//something for Aika
 	//login button on the main home page
 	@FindBy(xpath="//*[@data-toggle='dropdown']") //*[@id="mod-login_boxtop2"]/div/button
-	WebElement LogInButton;
+	WebElement logInButton;
 	
 }
