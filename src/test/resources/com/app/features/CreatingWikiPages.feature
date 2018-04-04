@@ -1,6 +1,6 @@
 Feature: Creating Wiki Pages
 
-  @smokeTest @aikafeature
+  @smokeTest 
   Scenario: Wiki Page
     Given I logged into tiki-wiki
     And I see Menu options

@@ -1,9 +1,10 @@
 Feature: Tiki-Wiki menu options
-
+@aikafeature
   Scenario: Verify Recent Preferences menu options
     Given I logged into tiki-wiki
     When I hover over the clock icon
     Then following options should be visible for Recent Preferences:
+    Then I logout from tiki-wiki
       | wikiHomePage                   |
       | sitetitle                      |
       | browsertitle                   |
@@ -19,6 +20,7 @@ Feature: Tiki-Wiki menu options
     Given I logged into tiki-wiki
     When I hover over the angle-down icon
     Then following options should be visible for Quick Administration:
+    Then I logout from tiki-wiki
       | Wizards              |
       | Control panels       |
       | Themes               |

@@ -1,8 +1,7 @@
 Feature: Creating calendar and adding event
-#as an Admin
-#I want
 
-
+  #as an Admin
+  #I want
   Background: 
     Given I logged into tiki-wiki
 
@@ -14,6 +13,7 @@ Feature: Creating calendar and adding event
     When click on the save button
     Then I should see calendars for "<name>"
     Then I logout from application
+    Then I logout from tiki-wiki
 
     Examples: 
       | name       | description                        |
@@ -27,4 +27,4 @@ Feature: Creating calendar and adding event
     And click on the save button
     Then Event details page should be displayed
     And Data should match with created event data
-    Then I logout from application
+    Then I logout from tiki-wiki

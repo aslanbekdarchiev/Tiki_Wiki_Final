@@ -7,6 +7,7 @@ Feature: create and delete article
     Then "No title specified" article must be in articles list
     And I delete "No title specified" article
     Then "No title specified" must not be in article list
+    Then I logout from tiki-wiki
 
   Scenario Outline: article with title
     Given I logged into tiki-wiki
@@ -14,6 +15,7 @@ Feature: create and delete article
     Then <title> article must be in articles list
     And I delete <title> article
     Then <title> must not be in article list
+    Then I logout from tiki-wiki
 
     Examples: 
       | <title>  |
