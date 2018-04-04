@@ -1,13 +1,28 @@
 Feature: Creating Wiki Pages
 
-  @smokeTest 
+  @aika
   Scenario: Wiki Page
     Given I logged into tiki-wiki
-    And I see Menu options
+    And I should see Menu options:
+      | Home           |
+      | Search         |
+      | Categories     |
+      | Tags           |
+      | Calendar       |
+      | Wiki           |
+      | Articles       |
+      | Blogs          |
+      | Forums         |
+      | File Galleries |
+      | Spreadsheets   |
+      | Trackers       |
+      | Surverys       |
+      | Newsletters    |
+      | Settings       |
     And I create wiki page "Continuos Integration"
     Then Wiki Page " Continuous Integration "is listed in List Pages
 
-  @aikafeature
+  
   Scenario: Wiki Page
     Given I logged into tiki-wiki
     And I see Menu options
