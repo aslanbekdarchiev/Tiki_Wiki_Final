@@ -30,6 +30,19 @@ public class LoginPage {
 	@FindBy(xpath="//button[@class='btn btn-primary button submit']")
 	public WebElement login;
 	
+	@FindBy(linkText="Go to the Control Panels")
+	public WebElement goToControlPanel;
+	
+	@FindBy(linkText="Log out")
+	public WebElement logOutFromDropDown;
+	
+	@FindBy(xpath="//button[@class='dropdown-toggle login_link btn btn-link']")
+	public WebElement logOutDropDown;
+	
+	public void logout() {
+		
+	}
+	
 	public void login(String userName, String pwd) {
 		username.sendKeys(userName);
 		password.sendKeys(pwd);
