@@ -3,6 +3,7 @@ package com.app.utilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,6 +23,10 @@ public class Driver {
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
+				break;
+			case "phantomjs":
+				WebDriverManager.phantomjs().setup();
+				driver = new PhantomJSDriver();
 				break;
 			default:
 				WebDriverManager.firefoxdriver().setup();
