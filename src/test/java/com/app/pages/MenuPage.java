@@ -1,6 +1,5 @@
 package com.app.pages;
 
-import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,12 +10,27 @@ import com.app.utilities.Driver;
 
 public class MenuPage {
 
+
 	private WebDriver driver;
+
 
 	public MenuPage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
 	}
+
+	@FindBy(xpath="//ul[@id='menu_option51']/..")
+	public WebElement articlesDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option51']//li[3]")
+	public WebElement newArticleFromArticleDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option51']//li[2]")
+	public WebElement listArticleFromArticleDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option51']//li[4]")
+	public WebElement adminTopicsFromArticleDropDown;
+
 	
 	@FindBy(xpath="//div[@id='mod-menuleft1']/ul/li")
 	public List <WebElement>pageMenuOptions;
@@ -39,6 +53,7 @@ public class MenuPage {
 	
 	@FindBy(xpath="//a[@title='Log out']")
 	public WebElement logoutFinal;
+
 	
 	
 }

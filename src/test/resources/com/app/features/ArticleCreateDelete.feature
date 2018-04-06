@@ -1,14 +1,19 @@
 @Regression @article
 Feature: create and delete article
-
-  Scenario: article without title
+ 
+  Scenario Outline: article without title
     Given I logged into tiki-wiki
     When I create article without content
-    Then "No title specified" article must be in articles list
-    And I delete "No title specified" article
-    Then "No title specified" must not be in article list
+    Then <title> article must be in articles list
+    And I delete <title> article
+    Then <title> must not be in article list
     Then I logout from tiki-wiki
 
+    Examples: 
+      | title            |
+      | No title specified |
+
+@aslan
   Scenario Outline: article with title
     Given I logged into tiki-wiki
     When I create article with <title> title
@@ -18,7 +23,7 @@ Feature: create and delete article
     Then I logout from tiki-wiki
 
     Examples: 
-      | <title>  |
+      | title  |
       | bublik   |
       | morkovka |
       | rediska  |

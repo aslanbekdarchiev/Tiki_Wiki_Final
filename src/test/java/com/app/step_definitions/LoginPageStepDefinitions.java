@@ -2,7 +2,6 @@ package com.app.step_definitions;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.app.pages.LoginPage;
@@ -20,13 +19,17 @@ public class LoginPageStepDefinitions {
 	LoginPage loginPage = new LoginPage();
 
 	@Given("^I logged into tiki-wiki$")
-	public void i_logged_into_tiki_wiki() {
+	public void i_logged_into_tiki_wiki()  {
 		driver.get(ConfigurationReader.getProperty("url"));
+    
+    
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", loginPage.LogInDrowDown);
 		
 		loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
 	
+
 
 	}
 
