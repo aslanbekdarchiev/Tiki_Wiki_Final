@@ -1,24 +1,53 @@
 Feature: Creating Wiki Pages
 
-  @smokeTest 
-  Scenario: Wiki Page
+  @aika
+  Scenario: Creating a Wiki Page
     Given I logged into tiki-wiki
-    And I see Menu options
+    And I should see Menu options:
+      | Home           |
+      | Search         |
+      | Categories     |
+      | Tags           |
+      | Calendar       |
+      | Wiki           |
+      | Articles       |
+      | Blogs          |
+      | Forums         |
+      | File Galleries |
+      | Spreadsheets   |
+      | Trackers       |
+      | Surveys        |
+      | Newsletters    |
+      | Settings       |
     And I create wiki page "Continuos Integration"
     Then Wiki Page " Continuous Integration "is listed in List Pages
-
-  @aikafeature
-  Scenario: Wiki Page
+    Then I log out from application
+@aika
+  Scenario: Editing a  Wiki Page
     Given I logged into tiki-wiki
-    And I see Menu options
-    And I go to Wiki
-    And I edit the page
-    Then I am able to see Last Changes of all pages
-
-  Scenario: Wiki Page
+    And I should see Menu options:
+      | Home           |
+      | Search         |
+      | Categories     |
+      | Tags           |
+      | Calendar       |
+      | Wiki           |
+      | Articles       |
+      | Blogs          |
+      | Forums         |
+      | File Galleries |
+      | Spreadsheets   |
+      | Trackers       |
+      | Surveys        |
+      | Newsletters    |
+      | Settings       |
+    And I edit the page called "Continuos Integration"
+    Then I am able to see Last Changes of this pages
+    Then I log out from application
+@aika
+  Scenario: Searching  for a Wiki Page
     Given I logged into tiki-wiki
-    And I see Menu options
-    And I go to Wiki
-    And I go to List Wiki Pages
-    Then I should  be able to search for pages
-    And number of available pages should be same as number of displayed rows
+    And I go to List Pages
+    Then I should  be able to search for "Continuos Integration" page
+    And the resulf of my search is the "Continuos Integration" page
+    Then I log out from application

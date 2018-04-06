@@ -19,18 +19,17 @@ public class LoginPageStepDefinitions {
 	LoginPage loginPage = new LoginPage();
 
 	@Given("^I logged into tiki-wiki$")
-	public void i_logged_into_tiki_wiki() throws InterruptedException {
+	public void i_logged_into_tiki_wiki()  {
 		driver.get(ConfigurationReader.getProperty("url"));
-		BrowserUtils.waitForPageToLoad(3);
+    
+    
 
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", loginPage.LogInDrowDown);
 		
-		Thread.sleep(2000);
-
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		
-		executor.executeScript("arguments[0].click();", loginPage.LogInDrowDown);
-
 		loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
+	
+
 
 	}
 
