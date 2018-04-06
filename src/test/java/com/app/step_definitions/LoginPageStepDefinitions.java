@@ -24,9 +24,9 @@ public class LoginPageStepDefinitions {
 		driver.get(ConfigurationReader.getProperty("url"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", loginPage.LogInDrowDown);
-		BrowserUtils.waitFor(5);
+		
 		loginPage.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-		BrowserUtils.waitFor(5);
+	
 
 	}
 
