@@ -31,6 +31,9 @@ public class ListArticlesPage {
 	@FindBy(linkText = "Confirm action")
 	public WebElement confirmAction;
 
+	@FindBy(xpath = "//*[@id=\"col1\"]/a[1]")
+	public WebElement goBack;
+
 	public void deleteArticleByTitleName(String title) {
 		List<WebElement> listOfTitltes = driver
 				.findElements(By.xpath("//*[contains(text(), '" + title + "')]/../../td[1]"));
@@ -42,10 +45,19 @@ public class ListArticlesPage {
 			Select select = new Select(selectAction);
 			select.selectByValue("remove_articles");
 			OK.click();
-			BrowserUtils.waitForVisibility(confirmAction, 3).click();
+			BrowserUtils.waitForVisibility(confirmAction, 3);
+			confirmAction.click();
+			try {
+				goBack.click();
+				BrowserUtils.waitForVisibility(confirmAction, 3);
+				confirmAction.click();
+
+			} catch (Exception e) {
+
+			}
 			BrowserUtils.waitForPageToLoad(3);
 			listOfTitltes = driver.findElements(By.xpath("//*[contains(text(), '" + title + "')]/../../td[1]"));
-			assertEquals(before - 1, listOfTitltes.size());
+			assertEquals(0, listOfTitltes.size());
 		} else {
 			System.out.println("no expected articles present in list, or check title name");
 		}

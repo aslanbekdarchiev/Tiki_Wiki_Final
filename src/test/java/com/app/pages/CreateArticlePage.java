@@ -15,6 +15,8 @@ public class CreateArticlePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	
+
 	@FindBy(name = "title")
 	public WebElement titleInput;
 

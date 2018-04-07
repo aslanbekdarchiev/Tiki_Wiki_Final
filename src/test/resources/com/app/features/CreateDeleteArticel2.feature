@@ -11,7 +11,7 @@ Feature: create article with geading and body
 
   Scenario Outline: write content
     Given I logged into tiki-wiki
-    When I create  article with <body> and <Heading> <title>
+    When I create  article with <title> <body> and <Heading> 
     Then I verify  article  <title> has <body> and <Heading> content
     And I delete <title> article
     Then <title> must not be in article list
