@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I create article with bublik title (PASSED : 7s)</div>]]>
+      <![CDATA[<div "result">I create article without content (PASSED : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">bublik article must be in articles list (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">No title specified article must be in articles list (PASSED : 3s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I delete bublik article (PASSED : 32s)</div>]]>
+      <![CDATA[<div "result">I delete No title specified article (PASSED : 64s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">No title specified must not be in article list (PASSED : 30s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 7s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I create article with bublik title (PASSED : 3s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">bublik article must be in articles list (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">I delete bublik article (PASSED : 62s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">bublik must not be in article list (PASSED : 30s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 5s)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 4s)</div>]]>
+      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">I create article with morkovka title (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">morkovka article must be in articles list (PASSED : 4s)</div>]]>
+      <![CDATA[<div "result">morkovka article must be in articles list (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I delete morkovka article (PASSED : 32s)</div>]]>
+      <![CDATA[<div "result">I delete morkovka article (PASSED : 64s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">morkovka must not be in article list (PASSED : 30s)</div>]]>
@@ -41,34 +59,102 @@
       <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I create article with rediska title (PASSED : 4s)</div>]]>
+      <![CDATA[<div "result">I create article with rediska title (PASSED : 6s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">rediska article must be in articles list (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">rediska article must be in articles list (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I delete rediska article (PASSED : 31s)</div>]]>
+      <![CDATA[<div "result">I delete rediska article (PASSED : 62s)</div>]]>
     </line>
     <line>
       <![CDATA[<div "result">rediska must not be in article list (PASSED : 30s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 2s)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 1s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="244895" started-at="2018-04-04T22:54:10Z" finished-at="2018-04-04T22:58:15Z">
+  <suite name="Default suite" duration-ms="440845" started-at="2018-04-07T16:56:20Z" finished-at="2018-04-07T17:03:41Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="244895" started-at="2018-04-04T22:54:10Z" finished-at="2018-04-04T22:58:15Z">
+    <test name="Default test" duration-ms="440845" started-at="2018-04-07T16:56:20Z" finished-at="2018-04-07T17:03:41Z">
       <class name="com.app.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="185" started-at="2018-04-04T22:54:10Z" finished-at="2018-04-04T22:54:10Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="178" started-at="2018-04-07T16:56:20Z" finished-at="2018-04-07T16:56:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="89443" started-at="2018-04-04T22:54:11Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-04T22:55:40Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="115306" started-at="2018-04-07T16:56:20Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-07T16:58:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["article without title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["create and delete article"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I create article without content (PASSED : 6s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">No title specified article must be in articles list (PASSED : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I delete No title specified article (PASSED : 64s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">No title specified must not be in article list (PASSED : 30s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 3s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="107077" started-at="2018-04-07T16:58:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-07T17:00:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["article with title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["create and delete article"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 7s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I create article with bublik title (PASSED : 3s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">bublik article must be in articles list (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I delete bublik article (PASSED : 62s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">bublik must not be in article list (PASSED : 30s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 1s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="109285" started-at="2018-04-07T17:00:02Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-07T17:01:52Z">
           <params>
             <param index="0">
               <value>
@@ -86,47 +172,13 @@
               <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I create article with bublik title (PASSED : 7s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">bublik article must be in articles list (PASSED : 2s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I delete bublik article (PASSED : 32s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">bublik must not be in article list (PASSED : 30s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 5s)</div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="78330" started-at="2018-04-04T22:55:40Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-04T22:56:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["article with title"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["create and delete article"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 4s)</div>]]>
-            </line>
-            <line>
               <![CDATA[<div "result">I create article with morkovka title (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">morkovka article must be in articles list (PASSED : 4s)</div>]]>
+              <![CDATA[<div "result">morkovka article must be in articles list (PASSED : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I delete morkovka article (PASSED : 32s)</div>]]>
+              <![CDATA[<div "result">I delete morkovka article (PASSED : 64s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">morkovka must not be in article list (PASSED : 30s)</div>]]>
@@ -136,7 +188,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="76849" started-at="2018-04-04T22:56:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-04T22:58:15Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="108915" started-at="2018-04-07T17:01:52Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-07T17:03:41Z">
           <params>
             <param index="0">
               <value>
@@ -154,23 +206,23 @@
               <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 5s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I create article with rediska title (PASSED : 4s)</div>]]>
+              <![CDATA[<div "result">I create article with rediska title (PASSED : 6s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">rediska article must be in articles list (PASSED : 2s)</div>]]>
+              <![CDATA[<div "result">rediska article must be in articles list (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I delete rediska article (PASSED : 31s)</div>]]>
+              <![CDATA[<div "result">I delete rediska article (PASSED : 62s)</div>]]>
             </line>
             <line>
               <![CDATA[<div "result">rediska must not be in article list (PASSED : 30s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 2s)</div>]]>
+              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 1s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2018-04-04T22:58:15Z" finished-at="2018-04-04T22:58:15Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2018-04-07T17:03:41Z" finished-at="2018-04-07T17:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

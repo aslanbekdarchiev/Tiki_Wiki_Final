@@ -1,6 +1,8 @@
 package com.app.step_definitions;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 import java.util.List;
 
@@ -31,13 +33,12 @@ public class ArticleStepDefs1 {
 
 	@When("^I create article without content$")
 	public void i_create_article_without_content() {
-		loginPage.goToControlPanel.click();
+		BrowserUtils.waitForPageToLoad(3);//loginPage.goToControlPanel.click();
 		menu.articlesDropDown.click();
 		BrowserUtils.waitForVisibility(menu.newArticleFromArticleDropDown, 3).click();
 		createArticle.createArticle(null, null, null);
 
 	}
-
 
 	@Then("^(.*) article must be in articles list$")
 	public void article_must_be_in_articles_list(String noTitleSpecified) {
@@ -46,37 +47,37 @@ public class ArticleStepDefs1 {
 		assertEquals(noTitleSpecified, driver.findElement(By.linkText(noTitleSpecified)).getText());
 	}
 
-
 	@Then("^I delete (.*) article$")
 	public void i_delete_article(String title) {
 		List<WebElement> listOfTitltes = driver
 				.findElements(By.xpath("//*[contains(text(), '" + title + "')]/../../td[1]"));
-		
+
 		listArticles.deleteArticleByTitleName(title);
 
 	}
-
 
 	@Then("^(.*) must not be in article list$")
 	public void must_not_be_in_article_list(String title) {
 		List<WebElement> listOfTitltes = driver
 				.findElements(By.xpath("//*[contains(text(), '" + title + "')]/../../td[1]"));
+
+		assertEquals(listOfTitltes.size(), 0, "All " + title + " aritlces are removed from list");
 		
-		assertEquals( listOfTitltes.size(),0,"All "+title+" aritlces are removed from list");
-	}
+		
+			}
 
 	@Then("^I logout from tiki-wiki$")
 	public void i_logout_from_tiki_wiki() {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 
 		executor.executeScript("arguments[0].click();", loginPage.logOutDropDown);
-		
+
 		loginPage.logOutFromDropDown.click();
 	}
-	
+
 	@When("^I create article with (.*) title$")
 	public void i_create_article_with_title(String title) {
-		loginPage.goToControlPanel.click();
+		
 		menu.articlesDropDown.click();
 		BrowserUtils.waitForVisibility(menu.newArticleFromArticleDropDown, 3).click();
 		createArticle.createArticle(title, null, null);

@@ -64,12 +64,6 @@ public class CreateWikiPageStepDefs {
 		assertTrue(listPages.contIntPage.getText().contains("Continuos"));
 	}
 
-	@Then("^I log out from application$")
-	public void i_log_out_from_application() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", menuPage.logout);
-		menuPage.logoutFinal.click();
-
-	}
+	
 
 }

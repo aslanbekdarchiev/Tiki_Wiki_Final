@@ -1,6 +1,8 @@
 package com.app.pages;
 
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,7 +35,7 @@ public class MenuPage {
 
 	
 	@FindBy(xpath="//div[@id='mod-menuleft1']/ul/li")
-	public List <WebElement>pageMenuOptions;
+	public List <WebElement> pageMenuOptions;
 	
 	
 	@FindBy(xpath="//div[@id='mod-menuleft1']//li/a[@href='#menu_option32']")

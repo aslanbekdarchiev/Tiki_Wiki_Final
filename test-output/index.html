@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.app.runners.CukesRunner" hash-for-method="runScenario(&quot;article without title&quot;, &quot;create and delete article&quot;)">runScenario("article without title", "create and delete article")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.app.runners.CukesRunner" hash-for-method="runScenario(&quot;article with title&quot;, &quot;create and delete article&quot;)">runScenario("article with title", "create and delete article")</a> <!-- method navigator-link -->
@@ -135,6 +140,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;article without title&quot;, &quot;create and delete article&quot;)">
+                  </a> <!-- runScenario("article without title", "create and delete article") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("article without title", "create and delete article")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;article with title&quot;, &quot;create and delete article&quot;)">
                   </a> <!-- runScenario("article with title", "create and delete article") -->
                   <span class="method-name">runScenario</span>
@@ -168,7 +183,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/0l/1kpjn9r969d8zhh5zxrlqjfr0000gn/T/testng-eclipse--1604943790/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0l/1kpjn9r969d8zhh5zxrlqjfr0000gn/T/testng-eclipse--1918358785/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,24 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.app.runners.CukesRunner')
-data.setCell(0, 3, 89443);
+data.setCell(0, 3, 115306);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.app.runners.CukesRunner')
-data.setCell(1, 3, 78330);
+data.setCell(1, 3, 109285);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.app.runners.CukesRunner')
-data.setCell(2, 3, 76849);
+data.setCell(2, 3, 108915);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.app.runners.CukesRunner')
+data.setCell(3, 3, 107077);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,35 +273,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("article with title", "create and delete article")</span>
+              <span class="reporter-method-name">runScenario("article without title", "create and delete article")</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><div "result">I logged into tiki-wiki (PASSED : 5s)</div></span>
-                <span class="reporter-method-output"><div "result">I create article with bublik title (PASSED : 7s)</div></span>
-                <span class="reporter-method-output"><div "result">bublik article must be in articles list (PASSED : 2s)</div></span>
-                <span class="reporter-method-output"><div "result">I delete bublik article (PASSED : 32s)</div></span>
-                <span class="reporter-method-output"><div "result">bublik must not be in article list (PASSED : 30s)</div></span>
-                <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">I create article without content (PASSED : 6s)</div></span>
+                <span class="reporter-method-output"><div "result">No title specified article must be in articles list (PASSED : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">I delete No title specified article (PASSED : 64s)</div></span>
+                <span class="reporter-method-output"><div "result">No title specified must not be in article list (PASSED : 30s)</div></span>
+                <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 3s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">runScenario("article with title", "create and delete article")</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output"><div "result">I logged into tiki-wiki (PASSED : 5s)</div></span>
-                <span class="reporter-method-output"><div "result">I create article with rediska title (PASSED : 4s)</div></span>
-                <span class="reporter-method-output"><div "result">rediska article must be in articles list (PASSED : 2s)</div></span>
-                <span class="reporter-method-output"><div "result">I delete rediska article (PASSED : 31s)</div></span>
-                <span class="reporter-method-output"><div "result">rediska must not be in article list (PASSED : 30s)</div></span>
-                <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 2s)</div></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("article with title", "create and delete article")</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">I logged into tiki-wiki (PASSED : 4s)</div></span>
                 <span class="reporter-method-output"><div "result">I create article with morkovka title (PASSED : 5s)</div></span>
-                <span class="reporter-method-output"><div "result">morkovka article must be in articles list (PASSED : 4s)</div></span>
-                <span class="reporter-method-output"><div "result">I delete morkovka article (PASSED : 32s)</div></span>
+                <span class="reporter-method-output"><div "result">morkovka article must be in articles list (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">I delete morkovka article (PASSED : 64s)</div></span>
                 <span class="reporter-method-output"><div "result">morkovka must not be in article list (PASSED : 30s)</div></span>
+                <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 1s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("article with title", "create and delete article")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I logged into tiki-wiki (PASSED : 7s)</div></span>
+                <span class="reporter-method-output"><div "result">I create article with bublik title (PASSED : 3s)</div></span>
+                <span class="reporter-method-output"><div "result">bublik article must be in articles list (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I delete bublik article (PASSED : 62s)</div></span>
+                <span class="reporter-method-output"><div "result">bublik must not be in article list (PASSED : 30s)</div></span>
+                <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 1s)</div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">runScenario("article with title", "create and delete article")</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div "result">I logged into tiki-wiki (PASSED : 5s)</div></span>
+                <span class="reporter-method-output"><div "result">I create article with rediska title (PASSED : 6s)</div></span>
+                <span class="reporter-method-output"><div "result">rediska article must be in articles list (PASSED : 1s)</div></span>
+                <span class="reporter-method-output"><div "result">I delete rediska article (PASSED : 62s)</div></span>
+                <span class="reporter-method-output"><div "result">rediska must not be in article list (PASSED : 30s)</div></span>
                 <span class="reporter-method-output"><div "result">I logout from tiki-wiki (PASSED : 1s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -307,20 +337,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("article with title", "create and delete article")</span>
-                <span class="method-start">256 ms</span>
+                <span class="method-name">runScenario("article without title", "create and delete article")</span>
+                <span class="method-start">240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("article with title", "create and delete article")</span>
-                <span class="method-start">89700 ms</span>
+                <span class="method-start">115548 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("article with title", "create and delete article")</span>
-                <span class="method-start">168031 ms</span>
+                <span class="method-start">222627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("article with title", "create and delete article")</span>
+                <span class="method-start">331914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">244881 ms</span>
+                <span class="method-start">440831 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

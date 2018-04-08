@@ -1,6 +1,7 @@
-@Regression @article
+@Regression @article   @aslan
 Feature: create and delete article
- 
+
+
   Scenario Outline: article without title
     Given I logged into tiki-wiki
     When I create article without content
@@ -10,10 +11,9 @@ Feature: create and delete article
     Then I logout from tiki-wiki
 
     Examples: 
-      | title            |
+      | title              |
       | No title specified |
 
-@aslan
   Scenario Outline: article with title
     Given I logged into tiki-wiki
     When I create article with <title> title
@@ -23,7 +23,7 @@ Feature: create and delete article
     Then I logout from tiki-wiki
 
     Examples: 
-      | title  |
+      | title    |
       | bublik   |
       | morkovka |
       | rediska  |
