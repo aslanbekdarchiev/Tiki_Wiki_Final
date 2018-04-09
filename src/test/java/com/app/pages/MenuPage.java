@@ -38,7 +38,7 @@ public class MenuPage {
 	public List <WebElement> pageMenuOptions;
 	
 	
-	@FindBy(xpath="//div[@id='mod-menuleft1']//li/a[@href='#menu_option32']")
+	@FindBy(xpath="(//div[@id='mod-menuleft1']//a)[6]")
 	public WebElement wikiButton;
 	
 	@FindBy(xpath="//a[contains(text(),' Create a Wiki Page')]")
