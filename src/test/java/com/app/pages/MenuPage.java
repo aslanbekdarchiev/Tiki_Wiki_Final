@@ -3,6 +3,7 @@ package com.app.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,6 +56,25 @@ public class MenuPage {
 	
 	@FindBy(xpath="//a[@title='Log out']")
 	public WebElement logoutFinal;
+	
+	//Hikmet
+	@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-history glyphicon glyphicon-time ']")
+	public WebElement clock;
+
+	@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']")
+	public WebElement angleDown;
+
+	public List<WebElement> adminOptions(String name) {
+
+		if (name.equals("Recent Preferences")) {
+			String xpath = "//span[@class='icon icon-history glyphicon glyphicon-time ']/../..//li/a";
+			return driver.findElements(By.xpath(xpath));
+		} else if (name.equals("Quick Administration")) {
+			String xpath = "//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']/../..//li/a";
+			return driver.findElements(By.xpath(xpath));
+		}
+		return null;
+	}
 
 	
 	
