@@ -6,10 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.app.utilities.Driver;
-//hikmet
 public class CreateArticlePage {
 	WebDriver driver;
-
+//////
 	public CreateArticlePage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
