@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.app.utilities.Driver;
-//hikmet
+//hikmet Dogrul
 public class CreateArticlePage {
 	WebDriver driver;
 
