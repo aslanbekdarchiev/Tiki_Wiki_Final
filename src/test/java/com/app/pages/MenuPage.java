@@ -13,57 +13,57 @@ import com.app.utilities.Driver;
 
 public class MenuPage {
 
-	//comment
-		private WebDriver driver;
+
+	private WebDriver driver;
 
 
-		public MenuPage() {
-			this.driver = Driver.getDriver();
-			PageFactory.initElements(driver, this);
-		}
+	public MenuPage() {
+		this.driver = Driver.getDriver();
+		PageFactory.initElements(driver, this);
+	}
 
-		@FindBy(xpath="//ul[@id='menu_option51']/..")
-		public WebElement articlesDropDown;
-		
-		@FindBy(xpath="//ul[@id='menu_option51']//li[3]")
-		public WebElement newArticleFromArticleDropDown;
-		
-		@FindBy(xpath="//ul[@id='menu_option51']//li[2]")
-		public WebElement listArticleFromArticleDropDown;
-		
-		@FindBy(xpath="//ul[@id='menu_option51']//li[4]")
-		public WebElement adminTopicsFromArticleDropDown;
+	@FindBy(css="#mod-menuleft1 > ul > li:nth-child(7) > a")
+	public WebElement articlesDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option250']//li[3]")
+	public WebElement newArticleFromArticleDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option250']//li[2]")
+	public WebElement listArticleFromArticleDropDown;
+	
+	@FindBy(xpath="//ul[@id='menu_option250']//li[4]")
+	public WebElement adminTopicsFromArticleDropDown;
 
-		
-		@FindBy(xpath="//div[@id='mod-menuleft1']/ul/li")
-		public List <WebElement> pageMenuOptions;
-		
-		
-		@FindBy(xpath="(//div[@id='mod-menuleft1']//a)[6]")
-		public WebElement wikiButton;
-		
-		@FindBy(xpath="//a[contains(text(),' Create a Wiki Page')]")
-		public WebElement createWikiPage;
-		
-		@FindBy(xpath="//a[contains(text(),' List Pages')]")
-		public WebElement listPages;
-		
-		@FindBy(xpath="//a[contains(text(),' Last Changes')]")
-		public WebElement lastChanges;
-		
-		@FindBy(xpath="//button[@class='dropdown-toggle login_link btn btn-link']")
-		public WebElement logout;
-		
-		@FindBy(xpath="//a[@title='Log out']")
-		public WebElement logoutFinal;
-		
-		//Hikmet
-		@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-history glyphicon glyphicon-time ']")
-		public WebElement clock;
+	
+	@FindBy(xpath="//div[@id='mod-menuleft1']/ul/li")
+	public List <WebElement> pageMenuOptions;
+	
+	
+	@FindBy(xpath="(//div[@id='mod-menuleft1']//a)[6]")
+	public WebElement wikiButton;
+	
+	@FindBy(xpath="//a[contains(text(),' Create a Wiki Page')]")
+	public WebElement createWikiPage;
+	
+	@FindBy(xpath="//a[contains(text(),' List Pages')]")
+	public WebElement listPages;
+	
+	@FindBy(xpath="//a[contains(text(),' Last Changes')]")
+	public WebElement lastChanges;
+	
+	@FindBy(xpath="//button[@class='dropdown-toggle login_link btn btn-link']")
+	public WebElement logout;
+	
+	@FindBy(xpath="//a[@title='Log out']")
+	public WebElement logoutFinal;
+	
+	//Hikmet
+	@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-history glyphicon glyphicon-time ']")
+	public WebElement clock;
 
-		@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']")
-		public WebElement angleDown;
-		
+	@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']")
+	public WebElement angleDown;
+
 		@FindBy(linkText="Forums")
 		public WebElement forumsDropDown;
 		
@@ -91,6 +91,7 @@ public class MenuPage {
 				return driver.findElements(By.xpath(xpath));
 			}
 			return null;
+
 		}
 
 		
