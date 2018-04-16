@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.app.utilities.Driver;
 public class CreateArticlePage {
 	private WebDriver driver;
+	//
 	public CreateArticlePage() {
 		this.driver = Driver.getDriver();
 		PageFactory.initElements(driver, this);
