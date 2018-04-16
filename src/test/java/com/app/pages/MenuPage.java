@@ -13,7 +13,7 @@ import com.app.utilities.Driver;
 
 public class MenuPage {
 
-//comment
+
 	private WebDriver driver;
 
 
@@ -64,18 +64,36 @@ public class MenuPage {
 	@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']")
 	public WebElement angleDown;
 
-	public List<WebElement> adminOptions(String name) {
+		@FindBy(linkText="Forums")
+		public WebElement forumsDropDown;
+		
+		@FindBy(linkText="Blogs")
+		public WebElement blogsDropDown;
+		@FindBy(linkText="Create Blog")  //ul[@id=\"menu_option266\"]//li[2]
+		public WebElement createBlog;
+		@FindBy(linkText="Admin Forums")
+		public WebElement adminForumsLink;
 
-		if (name.equals("Recent Preferences")) {
-			String xpath = "//span[@class='icon icon-history glyphicon glyphicon-time ']/../..//li/a";
-			return driver.findElements(By.xpath(xpath));
-		} else if (name.equals("Quick Administration")) {
-			String xpath = "//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']/../..//li/a";
-			return driver.findElements(By.xpath(xpath));
+		@FindBy (xpath = "//li//ul[@id='menu_option266']//li")
+		public List<WebElement> blogsDropDownList;
+		@FindBy (xpath = "//li//ul[@id='menu_option272']//li")
+		public List<WebElement> forumsDropDownList;
+		
+
+
+		public List<WebElement> adminOptions(String name) {
+
+			if (name.equals("Recent Preferences")) {
+				String xpath = "//span[@class='icon icon-history glyphicon glyphicon-time ']/../..//li/a";
+				return driver.findElements(By.xpath(xpath));
+			} else if (name.equals("Quick Administration")) {
+				String xpath = "//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']/../..//li/a";
+				return driver.findElements(By.xpath(xpath));
+			}
+			return null;
+
 		}
-		return null;
-	}
 
-	
-	
-}
+		
+		
+	}
