@@ -64,6 +64,9 @@ public class MenuPage {
 		@FindBy(xpath = "//a[@href='#']//span[@class='icon icon-menu-extra glyphicon glyphicon-chevron-down ']")
 		public WebElement angleDown;
 		
+		@FindBy (linkText="Calendar")
+		public WebElement calendarLink;
+		
 		@FindBy(linkText="Forums")
 		public WebElement forumsDropDown;
 		

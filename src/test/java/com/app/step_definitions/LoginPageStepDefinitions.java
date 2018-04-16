@@ -60,13 +60,13 @@ public class LoginPageStepDefinitions {
 		}
 
 	}
-	@Then("^I logout from tiki-wiki$")
-	public void i_logout_from_tiki_wiki() {
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-
-		executor.executeScript("arguments[0].click();", loginPage.logOutDropDown);
-
-		loginPage.logOutFromDropDown.click();
-	}
+//	@Then("^I logout from tiki-wiki$")
+//	public void i_logout_from_tiki_wiki() {
+//		JavascriptExecutor executor = (JavascriptExecutor) driver;
+//
+//		executor.executeScript("arguments[0].click();", loginPage.logOutDropDown);
+//
+//		loginPage.logOutFromDropDown.click();
+//	}
 
 }
