@@ -23,7 +23,7 @@ public class CreateWikiPageStepDefs {
 
 	private WebDriver driver = Driver.getDriver();
 
-	//// div[@id='mod-menuleft1']/ul/li
+	
 	MenuPage menuPage = new MenuPage();
 	TikiSetupPage tikiSetupPage = new TikiSetupPage();
 	WikiPage wikiPage = new WikiPage();

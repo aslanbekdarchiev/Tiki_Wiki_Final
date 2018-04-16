@@ -31,9 +31,18 @@ public class ListArticlesPage {
 	@FindBy(linkText = "Confirm action")
 	public WebElement confirmAction;
 
-	@FindBy(xpath = "//*[@id=\"col1\"]/a[1]")
+	@FindBy(xpath = "//*[@id='col1']/a[1]")
 	public WebElement goBack;
 
+	@FindBy(xpath="//*[@id='col1']/article/header/h1/a")
+	public WebElement articleTitle;
+	
+	@FindBy(xpath="//*[@id='col1']/article/div[2]/div[2]/p")
+	public WebElement articleHeading;
+	
+	@FindBy(xpath="//*[@id='col1']/article/div[3]")
+	public WebElement articleBody;
+	
 	public void deleteArticleByTitleName(String title) {
 		List<WebElement> listOfTitltes = driver
 				.findElements(By.xpath("//*[contains(text(), '" + title + "')]/../../td[1]"));

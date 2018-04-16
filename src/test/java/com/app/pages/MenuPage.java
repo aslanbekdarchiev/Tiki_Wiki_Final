@@ -13,9 +13,8 @@ import com.app.utilities.Driver;
 
 public class MenuPage {
 
-	//comment
-		private WebDriver driver;
 
+	private WebDriver driver;
 
 		public MenuPage() {
 			this.driver = Driver.getDriver();
@@ -94,6 +93,7 @@ public class MenuPage {
 				return driver.findElements(By.xpath(xpath));
 			}
 			return null;
+
 		}
 
 		
