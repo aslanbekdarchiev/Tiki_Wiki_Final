@@ -1,6 +1,6 @@
 Feature: Create User Blogs functionality
 
-  @ilyarBlogsPage
+  @ilyarBlogsPage @aika
   Scenario: View Blog Page
     Given I logged into tiki-wiki
     When I am on the Home page

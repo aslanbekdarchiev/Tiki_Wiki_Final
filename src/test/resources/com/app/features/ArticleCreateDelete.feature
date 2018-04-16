@@ -1,7 +1,7 @@
 @Regression @article   @aslan
 Feature: create and delete article
 
-
+@aika
   Scenario Outline: article without title
     Given I logged into tiki-wiki
     When I create article without content

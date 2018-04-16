@@ -1,6 +1,6 @@
 Feature: Create User Forums functionality
 
-  @ilyarForumsPage
+  @ilyarForumsPage @aika
   Scenario: View Forums Page
     Given I logged into tiki-wiki
     When I am on the Home page
