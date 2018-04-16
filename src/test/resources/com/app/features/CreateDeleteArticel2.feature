@@ -12,7 +12,7 @@ Feature: create article with geading and body
       | title    | heading          |
       | custome1 | __heading1__     |
       | custome2 | __testHeading1__ |
-  @aslan
+  
   Scenario Outline: write content
     Given I logged into tiki-wiki
     When I create  article with "<title>" "<body>" and "<Heading>"

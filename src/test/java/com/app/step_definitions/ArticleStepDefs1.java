@@ -72,7 +72,9 @@ public class ArticleStepDefs1 {
 
 		try {
 			list.get(0).click();
-			assertEquals(createArticle.articleHeading.get,title);
+			assertEquals(listArticles.articleTitle.getText(),title);
+			assertEquals(listArticles.articleHeading.getText(),heading);
+			assertEquals(listArticles.articleBody.getText(),body);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
+      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 8s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I create  article with &quot;custome11&quot; &quot;myText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
+      <![CDATA[<div "result">I create topic &quot;bublik&quot; (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I verify  article &quot;custome11&quot; has &quot;myText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
+      <![CDATA[<div "result">&quot;bublik&quot; topic must be in topic list (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
+      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 8s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I create  article with &quot;custome22&quot; &quot;otherText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
+      <![CDATA[<div "result">I create topic &quot;morkovka&quot; (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I verify  article &quot;custome22&quot; has &quot;otherText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
+      <![CDATA[<div "result">&quot;morkovka&quot; topic must be in topic list (PASSED : 1s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="270" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
+  <suite name="Default suite" duration-ms="28828" started-at="2018-04-16T17:51:12Z" finished-at="2018-04-16T17:51:40Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="270" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
+    <test name="Default test" duration-ms="28828" started-at="2018-04-16T17:51:12Z" finished-at="2018-04-16T17:51:40Z">
       <class name="com.app.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="165" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="154" started-at="2018-04-16T17:51:12Z" finished-at="2018-04-16T17:51:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="23" started-at="2018-04-16T15:54:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T15:54:09Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="15097" started-at="2018-04-16T17:51:12Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T17:51:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["write content"]]>
+                <![CDATA["article without topic"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["create article with geading and body"]]>
+                <![CDATA["create and delete topics"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
+              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 8s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I create  article with &quot;custome11&quot; &quot;myText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
+              <![CDATA[<div "result">I create topic &quot;bublik&quot; (PASSED : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I verify  article &quot;custome11&quot; has &quot;myText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
+              <![CDATA[<div "result">&quot;bublik&quot; topic must be in topic list (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
+              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="5" started-at="2018-04-16T15:54:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T15:54:09Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="13497" started-at="2018-04-16T17:51:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T17:51:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["write content"]]>
+                <![CDATA["article without topic"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["create article with geading and body"]]>
+                <![CDATA["create and delete topics"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
+              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 8s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I create  article with &quot;custome22&quot; &quot;otherText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
+              <![CDATA[<div "result">I create topic &quot;morkovka&quot; (PASSED : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I verify  article &quot;custome22&quot; has &quot;otherText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
+              <![CDATA[<div "result">&quot;morkovka&quot; topic must be in topic list (PASSED : 1s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
+              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2018-04-16T17:51:40Z" finished-at="2018-04-16T17:51:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
