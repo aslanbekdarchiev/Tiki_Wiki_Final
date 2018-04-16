@@ -1,158 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 3s)</div>]]>
+      <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I should see Menu options: (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">I create  article with &quot;custome11&quot; &quot;myText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I create wiki page &quot;Continuos Integration&quot; (PASSED : 4s)</div>]]>
+      <![CDATA[<div "result">I verify  article &quot;custome11&quot; has &quot;myText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Wiki Page &quot; Continuous Integration &quot;is listed in List Pages (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 3s)</div>]]>
+      <![CDATA[<div "result">I create  article with &quot;custome22&quot; &quot;otherText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I should see Menu options: (PASSED : 1s)</div>]]>
+      <![CDATA[<div "result">I verify  article &quot;custome22&quot; has &quot;otherText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">I edit the page called &quot;Continuos Integration&quot; (PASSED : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I am able to see Last Changes of this pages (PASSED : 1s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I go to List Pages (PASSED : 1s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I should  be able to search for &quot;Continuos Integration&quot; page (PASSED : 1s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">the resulf of my search is the &quot;Continuos Integration&quot; page (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35034" started-at="2018-04-09T17:31:27Z" finished-at="2018-04-09T17:32:02Z">
+  <suite name="Default suite" duration-ms="270" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="35034" started-at="2018-04-09T17:31:27Z" finished-at="2018-04-09T17:32:02Z">
+    <test name="Default test" duration-ms="270" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
       <class name="com.app.runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="169" started-at="2018-04-09T17:31:27Z" finished-at="2018-04-09T17:31:27Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="165" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="13654" started-at="2018-04-09T17:31:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-09T17:31:41Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="23" started-at="2018-04-16T15:54:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T15:54:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Creating a Wiki Page"]]>
+                <![CDATA["write content"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating Wiki Pages"]]>
+                <![CDATA["create article with geading and body"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 3s)</div>]]>
+              <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I should see Menu options: (PASSED : 1s)</div>]]>
+              <![CDATA[<div "result">I create  article with &quot;custome11&quot; &quot;myText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I create wiki page &quot;Continuos Integration&quot; (PASSED : 4s)</div>]]>
+              <![CDATA[<div "result">I verify  article &quot;custome11&quot; has &quot;myText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Wiki Page &quot; Continuous Integration &quot;is listed in List Pages (PASSED : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="12483" started-at="2018-04-09T17:31:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-09T17:31:53Z">
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="5" started-at="2018-04-16T15:54:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-16T15:54:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Editing a  Wiki Page"]]>
+                <![CDATA["write content"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Creating Wiki Pages"]]>
+                <![CDATA["create article with geading and body"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 3s)</div>]]>
+              <![CDATA[<div "result">I logged into tiki-wiki (SKIPPED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I should see Menu options: (PASSED : 1s)</div>]]>
+              <![CDATA[<div "result">I create  article with &quot;custome22&quot; &quot;otherText&quot; and &quot;testHeading1&quot; (UNDEFINED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I edit the page called &quot;Continuos Integration&quot; (PASSED : 4s)</div>]]>
+              <![CDATA[<div "result">I verify  article &quot;custome22&quot; has &quot;otherText&quot; and &quot;testHeading1&quot; content (UNDEFINED)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">I am able to see Last Changes of this pages (PASSED : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">I logout from tiki-wiki (SKIPPED)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="runScenario" duration-ms="8644" started-at="2018-04-09T17:31:53Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-04-09T17:32:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Searching  for a Wiki Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Creating Wiki Pages"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[<div "result">I logged into tiki-wiki (PASSED : 4s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I go to List Pages (PASSED : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I should  be able to search for &quot;Continuos Integration&quot; page (PASSED : 1s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">the resulf of my search is the &quot;Continuos Integration&quot; page (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">I logout from tiki-wiki (PASSED : 0s)</div>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2018-04-09T17:32:02Z" finished-at="2018-04-09T17:32:02Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.app.runners.CukesRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2018-04-16T15:54:09Z" finished-at="2018-04-16T15:54:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

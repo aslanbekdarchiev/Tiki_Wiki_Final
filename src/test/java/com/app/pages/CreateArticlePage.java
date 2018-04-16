@@ -27,6 +27,9 @@ public class CreateArticlePage {
 
 	@FindBy(name = "save")
 	public WebElement save;
+	
+	@FindBy(linkText="New Article")
+	public WebElement newArticle;
 
 	public void createArticle(String title, String body, String heading) {
 

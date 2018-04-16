@@ -22,16 +22,16 @@ public class MenuPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath="//ul[@id='menu_option51']/..")
+	@FindBy(css="#mod-menuleft1 > ul > li:nth-child(7) > a")
 	public WebElement articlesDropDown;
 	
-	@FindBy(xpath="//ul[@id='menu_option51']//li[3]")
+	@FindBy(xpath="//ul[@id='menu_option250']//li[3]")
 	public WebElement newArticleFromArticleDropDown;
 	
-	@FindBy(xpath="//ul[@id='menu_option51']//li[2]")
+	@FindBy(xpath="//ul[@id='menu_option250']//li[2]")
 	public WebElement listArticleFromArticleDropDown;
 	
-	@FindBy(xpath="//ul[@id='menu_option51']//li[4]")
+	@FindBy(xpath="//ul[@id='menu_option250']//li[4]")
 	public WebElement adminTopicsFromArticleDropDown;
 
 	
